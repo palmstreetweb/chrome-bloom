@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Space_Grotesk, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { business } from "@/lib/business";
 import { content } from "@/lib/content";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
-const fraunces = Fraunces({
+const instrumentSerif = Instrument_Serif({
   variable: "--font-serif",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400"],
   style: ["normal", "italic"],
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -99,7 +108,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${instrumentSerif.variable} ${jetbrains.variable} h-full antialiased`}
       style={{ scrollBehavior: "smooth" }}
     >
       <head>

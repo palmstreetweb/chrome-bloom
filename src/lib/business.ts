@@ -5,15 +5,10 @@ export interface SocialLink {
 }
 
 export interface BrandPalette {
-  /** Primary brand color used for icon backgrounds and OG accents */
   accent: string;
-  /** Foreground text/glyph color on the brand background */
   onAccent: string;
-  /** Page background for OG cards */
   bg: string;
-  /** Primary text on OG cards */
   ink: string;
-  /** Secondary text on OG cards */
   inkMuted: string;
 }
 
@@ -29,22 +24,22 @@ export interface BusinessDetails {
 }
 
 export const business: BusinessDetails = {
-  name: "STARTER CO",
-  tagline: "Build templates faster with our clean agnostic starter.",
-  email: "hello@starter.palmstreetweb.design",
-  phone: "(555) 123-4567",
-  address: "123 Palm Street, Suite 100, San Francisco, CA 94107",
-  url: "https://starter.palmstreetweb.design",
+  name: "CHROME BLOOM",
+  tagline: "A small studio for AI-native software, polished by hand.",
+  email: "studio@chromebloom.palmstreetweb.design",
+  phone: "(415) 555-0142",
+  address: "201 Linden Street, Studio 5, San Francisco, CA 94102",
+  url: "https://chrome-bloom.palmstreetweb.design",
   socials: [
-    { name: "Instagram", href: "https://instagram.com/starter" },
-    { name: "LinkedIn", href: "https://linkedin.com/company/starter" },
-    { name: "X", href: "https://x.com/starter" },
+    { name: "Are.na", href: "https://are.na/chrome-bloom" },
+    { name: "Read.cv", href: "https://read.cv/teams/chromebloom" },
+    { name: "Dribbble", href: "https://dribbble.com/chromebloom" },
   ],
   brand: {
-    accent: "#2563EB",
-    onAccent: "#FFFFFF",
-    bg: "#FFFFFF",
-    ink: "#111827",
-    inkMuted: "#4B5563",
+    accent: "#7B3FF2",
+    onAccent: "#0A0033",
+    bg: "#F4ECFF",
+    ink: "#1A0B40",
+    inkMuted: "#5B4A85",
   },
 };
